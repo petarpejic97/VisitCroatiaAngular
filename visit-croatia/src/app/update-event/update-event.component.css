@@ -1,0 +1,172 @@
+.admin{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    padding: 30px;
+    /* position: absolute; */
+    /* transform: translate(-50%); */
+}
+.picture-wrapper {
+    display: grid;
+    margin-bottom: 30px;
+}
+.picture{
+    position: relative;
+    background-color: rgb(85, 85, 87);
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.picture img {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    z-index: 1;
+}
+.profile span {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    border-bottom: 2px solid lightgrey;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.profile{
+    padding-bottom: 50px;
+}
+.admin input[type=submit]{
+    font-family: 'Roboto', sans-serif;
+    background-color: #35363B;
+    border-radius: 3px;
+    width: -webkit-fill-available;
+    border:none;
+    padding:10px;
+    cursor: pointer;
+}
+
+input{
+    color:white;
+}
+
+.event{
+    background-color: #FF9B3C;
+    height: 500px;
+    padding: 15px 0 15px 0;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.eventpicture-wrapper{
+    display: grid;
+    margin-bottom: 30px;
+}
+.eventpicture{
+    position: relative;
+    background-color: rgb(85, 85, 87);
+    height: 150px;
+    width: 220px;
+    overflow: hidden;
+    cursor: pointer;
+    justify-self: center;
+}
+.eventpicture:before {
+    content: 'Add picture';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.event-wrapper{
+    /*border:1px solid black;*/
+    height: 200px;
+    padding: 15px;
+    display: flex;
+}
+
+::placeholder{
+    color:white;
+}
+.event-wrapper input {
+    margin: 0;
+    width: calc(100% - 35px);
+    margin-bottom: 30px;
+}
+
+input{
+    background-color: #FF9B3C;
+    border:none;
+    border-bottom:1px solid #35363B;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+    font-size: 16px;
+    color:white;
+} 
+:host >>>.ui-inputtext {
+    background-color: #FF9B3C;
+    border:none;
+    border-bottom:1px solid #35363B;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+    font-size: 16px;
+    width: 275px;
+    color:white;
+    margin-bottom: 30px;
+}
+:host>>>.ui-dropdown-filter {
+    background-color: white;
+}
+.wrapper-location{
+    margin-bottom: 30px;
+}
+.wrapper-type{
+    margin-bottom: 30px;
+}
+:host >>> .my-dropdown .ui-inputtext {
+    border-bottom: 1px solid black;
+    margin-bottom: 0;
+}
+.event-wrapper input[type=submit]{
+    background-color: #35363B;
+    border-radius: 3px;
+    border:none;
+    padding:10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.event-wrapper input[type=submit]:hover{
+    background-color: rgb(85, 85, 87);
+    transition: background-color 200ms ;
+}
+:host >>> .ui-dropdown{
+    background: none;
+    border:none;
+    transition:none;
+    color: black;
+}
+:host >>> .ui-dropdown-trigger{
+    background-color: #FF9B3C!important;
+    color:white;
+    height: 2em;
+}
+:host>>> .ui-dropdown .ui-dropdown-trigger .ui-dropdown-trigger-icon{
+    color:black;
+}
+.event-wrapper img{
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}

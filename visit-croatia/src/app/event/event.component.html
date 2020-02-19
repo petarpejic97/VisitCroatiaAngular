@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="row" style="margin-top:50px">
+  
+      <div class="col-lg-4">
+        <div class="admin">
+          <div class="picture-wrapper">
+              <div class="picture">
+                <img src="assets/user.png" alt="User picture">
+              </div>
+          </div>
+          <div class="profile">
+                <span>{{korisnik.name}}</span>
+                <span>{{korisnik.email}}</span>
+                <span>{{korisnik.phone}}</span>
+          </div>
+          <input type="submit" value="Log off" (click)="logoff()">
+        </div>
+      </div>
+  
+      <div class="col-lg-8">
+          <div class="event">
+              <h2 class="title">Create event</h2>
+
+              <div class="eventpicture-wrapper">
+                
+                <div id="img-container">
+                    <span id="text">Picture will be automatically added</span>
+                </div>
+              </div>
+
+              <div class="event-wrapper">
+                  <div class="col-lg-6">
+                      <div class="input-wrapper">
+                          <img class="nameIcon" src="assets/name.png" alt="Name picture" >
+                          <input type="text" name="Eventname" [(ngModel)]="event.name" placeholder="Event name">
+                      </div>
+                      <div class="input-wrapper">
+                          <img class="dateIcon" src="assets/calendar.png" alt="Date picture" >
+                          <p-calendar  [(ngModel)]="event.dateStart" dateFormat="dd.mm.yy."   ></p-calendar>
+                      </div>
+                      <div class="input-wrapper">
+                        <img class="dateIcon" src="assets/clock.png" alt="Date picture" >
+                        <p-calendar [(ngModel)]="event.time" timeOnly="true" showTime="true" hourFormat="24"></p-calendar>
+                        </div>
+                  </div>
+                
+                  <div class="col-lg-6">
+                    <div class="wrapper-location">
+                        <div class="input-wrapper my-dropdown">
+                            <img class="locationIcon" src="assets/location.png" alt="Location picture" >
+                            <p-dropdown [options]="locations"  placeholder="Select a location" [(ngModel)]="selectedLocation" filter="true">
+                                <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
+                                    <div style="font-size:14px;float:right;margin-top:4px;">{{locations.label}}</div>
+                                </div>
+                            </p-dropdown>
+                        </div>
+                    </div>
+                      
+                      <div class="wrapper-type">
+                        <div class="input-wrapper my-dropdown">
+                            <img  class="eventIcon" src="assets/event.png" alt="Event picture">
+                            <p-dropdown [options]="types" placeholder="Select a type" [(ngModel)]="selectedType" filter="true" (ngModelChange)="randomImg()">
+                                <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
+                                    <div style="font-size:14px;float:right;margin-top:4px">{{types.label}}</div>
+                                </div>
+                            </p-dropdown>
+                        </div>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="submit" value="Create" (click)="createEvent()" >
+                          <div *ngIf="error">
+                                <p style="color:red;">{{errorPass}}</p>
+                            </div>
+                        </div>
+                        
+                  </div>
+              </div>
+          </div>
+      </div>    
+    </div>
+  </div>

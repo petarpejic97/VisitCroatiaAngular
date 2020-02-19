@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row" >
+    <span class="city">{{cityName}}</span>
+    <div class="col-lg-12">
+      <div class="main-wrapper">
+      <div>
+        <ul class="myUL">
+          <li *ngFor="let event of eventsCity">
+            <h3>{{event.name}}</h3>
+            <div class="icons">
+              <img src="assets/edit.png" alt="edit icon" class="edit" (click)="editEvent(event.id)">
+              <img src="assets/delete.png" alt="delete icon" class="delete" (click)="deleteEvent(event.id)">
+            </div>
+          </li>
+        </ul>
+      </div>    
+    </div>
+  </div>
+</div>

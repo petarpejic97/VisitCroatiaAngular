@@ -1,0 +1,66 @@
+html{
+    background-color: #35363B;
+    font-family: 'Roboto', sans-serif;
+}
+html * {
+    margin:0;
+    padding:0;
+}
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    text-align: center;
+}
+.logo {
+   margin-top: -15px;
+   position: absolute;
+}
+.logReg{
+
+    background: #FF9B3C;
+    height: 500px;
+    border-radius: 5px;
+}
+.logReg h2{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 35px;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    left:50%;
+    transform: translate(-50%);
+}
+.unosiPodataka{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-44%);
+}
+.unosiPodataka input{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border: none;
+    width: 250px;
+}
+.unosiPodataka input[type=text]{
+    border-radius: 3px;
+}
+.unosiPodataka input[type=submit]{
+    background-color: #35363B;
+    color:white;
+    border-radius: 3px;
+    width: -webkit-fill-available;
+}
+.unosiPodataka p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #35363B;
+    padding: 5px;
+    text-align: center;
+}
+p a{
+    color: white;
+    cursor: pointer;
+}

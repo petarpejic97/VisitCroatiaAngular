@@ -1,0 +1,56 @@
+.city{
+    font-family: 'Kaushan Script', cursive;
+    color:#FF9B3C;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+.main-wrapper{
+    height: 500px;
+    background-color: #adadad;
+}
+.myUL li .icons{
+    float: right;
+}
+
+.myUL li .delete{
+    height: 20px;
+    cursor: pointer;
+}
+
+.myUL li .edit{
+    height: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+  /* Style the list items */
+  ul li {
+    position: relative;
+    padding: 12px;
+    list-style-type: none;
+    background: rgb(218, 217, 217);
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #c8c8c8;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background:rgb(126, 126, 126);
+    transition: 0,2s; 
+  }
+  h3{
+    display: inline;
+  }
+  

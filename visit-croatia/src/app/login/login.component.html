@@ -1,0 +1,47 @@
+<div class="container-fluid">
+        <div class="row" style="margin-top:50px">
+          <div class="offset-4 col-lg-4">
+              <div class="logReg">
+                    <div *ngIf="login" >
+                        <h2>Login</h2>
+                        <div class="unosiPodataka">
+                        <form >
+                            <input type="text" name="email" [(ngModel)]="korisnik.email" placeholder="Enter your email"><br>
+                            <br>
+                            <input type="password" name="password" [(ngModel)]="korisnik.password" placeholder="Enter your password"><br>
+                            <br>
+                            <input type="submit" value="Login" (click)="dohvatiKorisnika(korisnik)">
+                        </form>
+                        <p>If you don't have account, you can register <a (click)="registerFunction()">here</a></p>
+                        <div *ngIf="error">
+                            <p style="color:red;">{{errorMessage}}</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div *ngIf="register" >
+                        <h2>Registration</h2><br>
+                        <div class="unosiPodataka">
+                        <input type="text" name="name" [(ngModel)]="regKorisnik.name" placeholder="Enter your name"><br>
+                        <br>
+                        <input type="text" name="number" [(ngModel)]="regKorisnik.phone" placeholder="Enter your phone number"><br>
+                        <br>
+                        <input type="text" name="email" [(ngModel)]="regKorisnik.email" placeholder="Enter your email"><br>
+                        <br>
+                        <input type="password" name="password" [(ngModel)]="regKorisnik.password" minlength="6" placeholder="Enter your password"><br>
+                        <br>
+                        <input type="password" name="password" [(ngModel)]="regKorisnik.confPassword"  placeholder="Confirm your password"><br>
+                        <br>
+                        <input type="submit" value="Register" (click)="registrirajKorisnika(regKorisnik)"><br>
+
+                        <p>Go back to <a (click)="loginFunction()">login</a></p>
+
+                        <div *ngIf="error">
+                            <p style="color:red;">{{errorPass}}</p>
+                        </div>
+                        </div>
+                    </div>
+              </div>
+        </div>
+    </div>
+</div>

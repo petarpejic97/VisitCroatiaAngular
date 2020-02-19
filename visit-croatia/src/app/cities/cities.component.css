@@ -1,0 +1,122 @@
+.admin{
+    background-color: rgb(255, 255, 255);
+    height: 500px;;
+    padding: 30px;
+    /* position: absolute; */
+    /* transform: translate(-50%); */
+}
+.picture-wrapper {
+    display: grid;
+    margin-bottom: 30px;
+}
+.picture{
+    position: relative;
+    background-color: rgb(85, 85, 87);
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    justify-self: center;
+}
+.picture:before {
+    content: 'Add picture';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.picture img {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    z-index: 1;
+}
+.profile{
+    padding-bottom: 15px;
+}
+.profile span {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    border-bottom: 2px solid lightgrey;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+input{
+    cursor: pointer;
+}
+.admin input[type=submit]{
+    font-family: 'Roboto', sans-serif;
+    background-color: #35363B;
+    color:white;
+    border-radius: 3px;
+    width: -webkit-fill-available;
+    border:none;
+    padding:10px;
+}
+
+.btnCreateEvent{
+    margin-bottom: 10px;
+}
+
+.cities{
+    height: 500px;;
+    padding: 30px;
+}
+.cities .circle-wrapper  {
+    display: grid;
+    height: 100%;
+    
+}
+.circleZagreb{
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: #ffffffb0;
+    height: 205px;
+    width: 205px;
+    justify-self: center;
+    align-self: center;
+    display:grid;
+    cursor: pointer;
+}
+.circleSplit{
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: #ffffffb0;
+    height: 190px;
+    width: 190px;
+    justify-self: center;
+    align-self: center;
+    display:grid;
+    cursor: pointer;
+}
+.circleVinkovci{
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: #ffffffb0;
+    height: 175px;
+    width: 175px;
+    justify-self: end;
+    align-self: center;
+    display:grid;
+    cursor: pointer;
+}
+.circleOstali{
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: #ffffffb0;
+    height: 150px;
+    width: 150px;
+    align-self: center;
+    display:grid;
+    cursor: pointer;
+}
+h2{
+    justify-self: center;
+    align-self: center;
+}

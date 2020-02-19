@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row" style="margin-top:50px">
+
+    <div class="col-lg-4">
+      <div class="admin">
+        <div class="picture-wrapper">
+            <div class="picture">
+              <img src="assets/user.png" alt="User picture">
+            </div>
+        </div>
+        <div class="profile">
+              <span>{{korisnik.name}}</span>
+              <span>{{korisnik.email}}</span>
+              <span>{{korisnik.phone}}</span>
+        </div>
+        <input type="submit" class ="btnCreateEvent" value="Create event" (click)="createEvent()">
+        <input type="submit" value="Log off" (click)="logoff()">
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="cities">
+          <div class="row" style="height: 50%; padding-bottom: 15px;">
+            <div class="col-lg-6">
+              <div class="circle-wrapper">
+                <div class="circleZagreb" (click)="openZagreb()">
+                  <h2>Zagreb</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="circle-wrapper">
+                    <div class="circleSplit" (click)="openSplit()">
+                    <h2>Split</h2>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row" style="height: 50%; padding-top: 15px;">
+              <div class="col-lg-6">
+                  <div class="circle-wrapper">
+                      <div class="circleVinkovci" (click)="openVinkovci()">
+                      <h2>Vinkovci</h2>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="circle-wrapper">
+                      <div class="circleOstali">
+                      <h2>Ostali</h2>
+                    </div>
+                  </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+  </div>
+</div>
